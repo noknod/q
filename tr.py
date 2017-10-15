@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*- 
+#!/usr/bin/env python3
 
 
 import sys
@@ -17,7 +18,7 @@ def main():
             continue
         if match.group(6) != "200":
             continue
-        print(match.group(1))
+        print match.group(1)
 
 
 if __name__ == '__main__':
