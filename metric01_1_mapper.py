@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*- 
+#!/usr/bin/env python
 
 
 import sys
 import re
 
-# 196.223.28.31 - - [16/Nov/2015:00:00:00 +0400] "GET /photo/manage.cgi HTTP/1.1" 404 0 "-" "Mozilla/6.66"
+# 196.223.28.31 - - [16/Nov/2015:00:00:00 +0400] "GET /photo/manage.cgi HTTP/1.1" 200 0 "-" "Mozilla/6.66"
 
 def main():
     current_key = None
@@ -18,8 +18,9 @@ def main():
             continue
         print match.group(1), 1
         total += 1
-    print 'total', total
+    #print 'total', total
 
 
 if __name__ == '__main__':
     main()
+
